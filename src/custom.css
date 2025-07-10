@@ -1,0 +1,89 @@
+:root {
+  --background-accent: #fff;
+  --background-main: #fff;
+  --background-history-mobile: #f5f3ff;
+  --background-coin-select: #783cff;
+  --share-color: #6d28d9;
+  --inverse: #030712;
+  --share-button: #ddd6fe;
+  --gold-gradient: linear-gradient(
+    90deg,
+    rgba(255, 197, 48, 0.35) 0%,
+    #fff 100%
+  );
+  --silver-gradient: linear-gradient(
+    90deg,
+    rgba(222, 222, 222, 0.55) 0%,
+    #fff 100%
+  );
+  --bronze-gradient: linear-gradient(
+    90deg,
+    rgba(232, 167, 120, 0.55) 0%,
+    #fff 100%
+  );
+  --profit-gradient: linear-gradient(
+    90deg,
+    rgba(34, 179, 87, 0.12) 0%,
+    rgba(3, 7, 18, 0.12) 100%
+  );
+  --dirty-gradient: linear-gradient(
+    90deg,
+    rgba(34, 179, 87, 1) 0%,
+    rgba(3, 7, 18, 1) 100%
+  );
+  --bg-opacity: 0.5;
+}
+.dark {
+  --share-button: #111827;
+  --background-history-mobile: #0c121d;
+  --background-accent: #0e1421;
+  --background-main: #030712;
+  --share-color: #f9fafb;
+  --background-coin-select: #1f2937;
+  --inverse: #fff;
+  --gold-gradient: linear-gradient(
+    90deg,
+    rgba(255, 197, 48, 0.15) 0%,
+    rgba(14, 20, 33, 0.15) 100%
+  );
+  --silver-gradient: linear-gradient(
+    90deg,
+    rgba(222, 222, 222, 0.15) 0%,
+    rgba(14, 20, 33, 0.15) 100%
+  );
+  --bronze-gradient: linear-gradient(
+    90deg,
+    rgba(232, 167, 120, 0.15) 0%,
+    rgba(14, 20, 33, 0.15) 100%
+  );
+  --bg-opacity: 1;
+}
+
+.muted-coin path:first-child {
+  fill: rgba(220, 220, 222, 0.5);
+}
+
+.list-shadow {
+  background: linear-gradient(0deg, #030712 0%, rgba(3, 7, 18, 0) 100%);
+}
+
+.highlighted::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dirty-gradient);
+  z-index: -1;
+  animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

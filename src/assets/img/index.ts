@@ -1,0 +1,10 @@
+export { default as StatusCardCashback } from "./mainGameStatus/mascot_cashback.png";
+export { default as StatusCardDefault } from "./mainGameStatus/mascot_default.png";
+export { default as StatusCardLose } from "./mainGameStatus/mascot_lose.png";
+export { default as StatusCardSuccess } from "./mainGameStatus/mascot_success.png";
+export { default as ImgMascotInCircle } from "./mascotInCircle.png";
+export { default as ImgMascotInCircleError } from "./mascotInCircleError.png";
+export { default as ImgReferralBg } from "./referral_bg.png";
+export { default as ImgLoseWeb3 } from "./shareResult/lose_web3.png";
+export { default as ImgWinTon } from "./shareResult/win_ton.png";
+export { default as ImgWinWeb3 } from "./shareResult/win_web3.png";

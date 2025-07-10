@@ -1,0 +1,155 @@
+@import url("./custom.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-weight: 400;
+    font-family: Inter;
+    src: url("./assets/fonts/InterVariable.woff2");
+  }
+
+  @font-face {
+    font-weight: 500;
+    font-family: Inter;
+    src: url("./assets/fonts/InterVariable.woff2");
+  }
+
+  @font-face {
+    font-weight: 600;
+    font-family: Inter;
+    src: url("./assets/fonts/InterVariable.woff2");
+  }
+
+  @font-face {
+    font-weight: 700;
+    font-family: Inter;
+    src: url("./assets/fonts/InterVariable.woff2");
+  }
+
+  @font-face {
+    font-weight: 800;
+    font-family: Inter;
+    src: url("./assets/fonts/InterVariable.woff2");
+  }
+
+  @font-face {
+    font-weight: 900;
+    font-family: Inter;
+    src: url("./assets/fonts/InterVariable.woff2");
+  }
+
+  html,
+  body {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #030712;
+    --card: #ffffff;
+    --card-foreground: #030712;
+    --popover: #ffffff;
+    --popover-foreground: #030712;
+    --primary: #783cff;
+    --primary-foreground: #f9fafb;
+    --secondary: #f3f4f6;
+    --secondary-foreground: #111827;
+    --muted: #f3f4f6;
+    --muted-foreground: #6b7280;
+    --muted-accent-foreground: #5c6879;
+    --accent: #f5f3ff;
+    --accent-foreground: #111827;
+    --destructive: #ef4444;
+    --destructive-foreground: #f9fafb;
+    --border: #e5e7eb;
+    --input: #e5e7eb;
+    --ring: #030712;
+    --chart-1: #e76e50;
+    --chart-2: #2a9d90;
+    --chart-3: #274754;
+    --chart-4: #6a5110;
+    --chart-5: #f4a462;
+    --menu-item: #783cff;
+    --radius: 0.5rem;
+    --sidebar-background: #ababab;
+    --sidebar-foreground: #3f3f46;
+    --sidebar-primary: #18181b;
+    --sidebar-primary-foreground: #ababab;
+    --sidebar-accent: #f4f4f5;
+    --sidebar-accent-foreground: #18181b;
+    --sidebar-border: #e5e7eb;
+    --sidebar-ring: #3b82f6;
+  }
+  .dark {
+    --background: #030712;
+    --foreground: #f9fafb;
+    --card: #030712;
+    --card-foreground: #f9fafb;
+    --popover: #030712;
+    --popover-foreground: #f9fafb;
+    --primary: #783cff;
+    --primary-foreground: #111827;
+    --secondary: #1f2937;
+    --secondary-foreground: #f9fafb;
+    --muted: #1f2937;
+    --muted-foreground: #9ca3af;
+    --accent: #1f2937;
+    --accent-foreground: #f9fafb;
+    --muted-accent-foreground: #5c6879;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #f9fafb;
+    --border: #1f2937;
+    --input: #1f2937;
+    --ring: #d1d5db;
+    --chart-1: #2662d9;
+    --chart-2: #2eb88a;
+    --chart-3: #e88c30;
+    --chart-4: #af57db;
+    --chart-5: #e23670;
+    --menu-item: #f9fafb;
+    --sidebar-background: #18181b;
+    --sidebar-foreground: #f4f4f5;
+    --sidebar-primary: #1d4ed8;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #27272a;
+    --sidebar-accent-foreground: #f4f4f5;
+    --sidebar-border: #27272a;
+    --sidebar-ring: #3b82f6;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html,
+body {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

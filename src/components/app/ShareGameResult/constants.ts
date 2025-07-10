@@ -1,0 +1,26 @@
+export const DATA_SHARE_GAME_RESULT = {
+  en: {
+    share: "Share",
+    save: "Save Image",
+    myResults: "My Results!",
+    betAmount: "Bet Amount",
+    game: "Game",
+    cashback: "Amazing Cashback!",
+    lose: "The bet didn't work today",
+    copiedLink: "Link copied",
+    invite: "Let’s win together in WEB3 Lottery!",
+    scanQr: "Scan QR!",
+  },
+  ru: {
+    share: "Поделиться",
+    save: "Cохранить",
+    myResults: "Мой результат!",
+    betAmount: "Ставка",
+    game: "Игра",
+    cashback: "Потрясающий кешбэк!",
+    lose: "Ставка сегодня не сработала",
+    copiedLink: "Скопировано",
+    invite: "Выиграем вместе в WEB3-лотерею!",
+    scanQr: "Отсканируйте QR-код!",
+  },
+};

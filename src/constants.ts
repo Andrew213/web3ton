@@ -1,0 +1,8 @@
+export const LS_POLLING_USER_STATS_TIMESTAMP = "USER_STATS_TIMESTAMP";
+export const LS_USER_LANGUAGE = "USER_LANGUAGE";
+export const LS_GAME_TIMESTAMP = "GAME_TIMESTAMP";
+export const POLLING_INTERVAL = 2;
+export const MAX_VISIBLE_PAGES = 3;
+export const CARD_FLIP_BACK_TIMEOUT = 8;
+export const TARGET_EXPERIENCE = 500;
+export const GAMES_PER_PAGE = 15;
